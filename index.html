@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>KTU Result Analyser | VAST</title>
         <link rel="stylesheet" href="styles.css">
     </head>
@@ -22,39 +23,42 @@
         </header>
 
         <section id="home" class="home-section">
-            <div class="hero-section">
-                <h1 class="hero-heading">Analyze. Track credits. Visualize.</h1>
-                <p class="hero-para">Lets you analyse KTU Results PDF with detailed
-                    insights, effective credit tracking and interactive graphs 
-                    all through a simple web interface"
-                </p>
+            <div class="hero-container">
+                <div class="hero-top">
+                    <h1 class="hero-heading">Analyze. Track Credits. Visualize.</h1>
+                    <p class="hero-para">KTU Result Analyzer lets you analyse KTU Results PDF with detailed
+                        insights, effective credit tracking and interactive graphs 
+                        all through a simple web interface"
+                    </p>
+                </div>
+                <div class="hero-bottom">
+                    <!-- <img src="#" alt="sample presentation img added here"> -->
+                </div>
             </div>
-            <div class="file-updload-container">
+            <div class="file-upload-container">
                 <div class="card file-upload">
-                    <div class="file-upload top">
+                    <div class="file-upload-top">
                         <button class="card upload-button">
-                            <img src="plus.png"/>
-                            <span>Upload PDF</span>
+                            <img class="plus-icon" src="assets/plus_icon.svg"/>
+                            <span class="upload-pdf">Upload PDF</span>
                         </button>
-                    </div>
-                    <div class="file-updload bottom">
                         <div class="pdftype-buttons">
-                            <button class="btech">B.Tech</button>
-                            <button class="mtech">M.Tech</button>
-                            <button class="msc">M.Sc</button>
+                            <button class="pdftype-button">B.Tech</button>
+                            <button class="pdftype-button">M.Tech</button>
+                            <button class="pdftype-button">M.Sc</button>
                         </div>
-                        <button id="submit-button">
-                            <span>Submit</span>
-                        </button>
+                    </div>
+                    <div class="file-upload-bottom">
+                        <button class="submit-button">Submit</button>
                     </div>
                 </div>
             </div>
         </section>
 
         <footer class="site-footer">
-            <p>&copy; 2025 KTU Result Analyser</p>
-            <p>Powered by Vidya Academy of Science and Technology, Thalakottukara, Thrissur</p>
-            <p>Contact & Bug Report: teamname@gmail.com</p>
+            <p>&copy; 2025 KTU Result Analyser<br>
+            Powered by Vidya Academy of Science and Technology, Thalakottukara, Thrissur<br>
+            Contact & Bug Report: teamname@gmail.com</p>
         </footer>
 
     </body>
