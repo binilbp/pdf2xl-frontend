@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
     --primary-bg-color: #F9FAFB;
     --primary-color: #1F2937;
@@ -8,6 +10,59 @@
     --secondary-graph-color: #BFDBFE;
 
 }
+
+
 * {
     background-color: var(--primary-bg-color);
+    font-family: Be Vietnam Pro;
+    padding: 0;
+    margin: 0;
+}
+
+
+header a {
+    text-decoration: none;
+    color: var(--primary-text-color);
+    font-size: 20px;
+}
+
+.logo-name {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 20px;
+} 
+
+
+header {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    margin: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    column-gap: 80px;
+
+}
+
+nav a {
+    transition: all 0.2s ease 0s;
+}
+
+nav a:hover {
+    color: var(--primary-accent-color);
+}
+
+.login-button {
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: var(--primary-accent-color);
+    padding: 10px 30px;
+    border-radius: 25px;
 }
