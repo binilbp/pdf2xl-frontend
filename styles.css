@@ -8,7 +8,9 @@
     --secondary-text-color: #6b7280;
     --primary-graph-color: #76AAE4;
     --secondary-graph-color: #BFDBFE;
-
+    --glass-color: rgba(255,255,255,0.05);
+    --HEADER-HEIGHT: 10px;
+    --HORIZONTAL-PADDING: 50px; 
 }
 
 
@@ -19,26 +21,37 @@
     margin: 0;
 }
 
+.card {
+    border: 3px solid var(--primary-color);
+    border-radius: 25px;
+}
+
 
 header a {
     text-decoration: none;
     color: var(--primary-text-color);
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .logo-name {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
-    margin: 20px;
 } 
 
-
 header {
-    padding: 20px 40px;
+    position: sticky;
+    top: 0;
+    background-color: var(--primary-bg-color); /*fix transparence issue during scroll*/
+    z-index: 1000; /*(prevent overlapping) not sure if needed*/
+
+    padding: 0 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+
 }
+
 
 nav {
     display: flex;
@@ -46,7 +59,6 @@ nav {
     justify-content: space-evenly;
     align-items: center;
     column-gap: 80px;
-
 }
 
 nav a {
@@ -65,4 +77,43 @@ nav a:hover {
     background-color: var(--primary-accent-color);
     padding: 10px 30px;
     border-radius: 25px;
+}
+
+section {
+    padding: var(--HORIZONTAL-PADDING);
+    height: calc(100vh - var(--HEADER-HEIGHT));
+}
+
+.home-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: flex-start;
+}
+
+.hero-section {
+    max-width: 60%;
+}
+
+.hero-heading {
+    font-size: 50px;
+}
+
+.hero-para {
+    margin-top: 5%;
+    font-size: large;
+    max-width: 70%;
+}
+
+.file-upload {
+    margin: 50px 0;
+    padding: 16px;
+    width: min(400px, 90%);
+    height: min(350px, 70%);
+}
+
+@media (max-width: 768px) {
+    .hero-para .hero-heading{
+        text-align: center;
+    }
 }
