@@ -1,0 +1,13 @@
+:root {
+    --primary-bg-color: #F9FAFB;
+    --primary-color: #1F2937;
+    --primary-accent-color: #38BDF8;
+    --primary-text-color: #111827;
+    --secondary-text-color: #6b7280;
+    --primary-graph-color: #76AAE4;
+    --secondary-graph-color: #BFDBFE;
+
+}
+* {
+    background-color: var(--primary-bg-color);
+}

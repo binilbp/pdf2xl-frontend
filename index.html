@@ -11,17 +11,49 @@
         <header>
             <a href="/" class="logo-name">KTU Result Analyser</a>
             <nav>
-                <a href="#home" class="home-menu">Home</a>
-                <a href="#team" class="team-menu">Team</a>
-                <a href="Sign Up" class="singup-menu">Sign Up</a>
+                <a href="#home" class="menu home">Home</a>
+                <a href="#" class="menu team">Team</a>
+                <a href="#" class="menu singup">Sign Up</a>
+                <!--Authentication button should change to profile pic if login-->
                 <div id="auth-menu">
-                    <button class="login">Log In</button>
+                    <button class="login-button">Log In</button>
                 </div>
             </nav>
         </header>
 
-        <section id="home" class="hero-section">
-
+        <section id="home" class="home-section">
+            <div class="hero-section">
+                <h1 class="hero-heading">KTU Result Analyser</h1>
+                <p class="hero-para">Lets you analyse KTU Results PDF with detailed
+                    insights, effective credit tracking and interactive graphs 
+                    all through a simple web interface"
+                </p>
+            </div>
+            <div class="card file-updload">
+                <div class="file-updload top">
+                    <button class="card upload-button">
+                        <img src="plus.png"/>
+                        <span>Upload PDF</span>
+                    </button>
+                </div>
+                <div class="file-updload bottom">
+                    <div class="pdftype-buttons">
+                        <button class="btech">B.Tech</button>
+                        <button class="mtech">M.Tech</button>
+                        <button class="msc">M.Sc</button>
+                    </div>
+                    <button id="submit-button">
+                        <span>Submit</span>
+                    </button>
+                </div>
+            </div>
         </section>
+
+        <footer class="site-footer">
+            <p>&copy; 2025 KTU Result Analyser</p>
+            <p>Powered by Vidya Academy of Science and Technology, Thalakottukara, Thrissur</p>
+            <p>Contact & Bug Report: teamname@gmail.com</p>
+        </footer>
+
     </body>
 </html>
