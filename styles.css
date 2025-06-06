@@ -92,8 +92,11 @@ section {
     justify-content: space-between;
 }
 .hero-heading {
-    color: var(--primary-text-color);
     font-size: 50px;
+    background: linear-gradient(185deg, #111827, #166485);
+    background-clip: text;
+    color: transparent;
+
 }
 .hero-para {
     color: var(--secondary-text-color);
